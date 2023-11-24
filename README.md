@@ -5,11 +5,12 @@ Self-Triggered Monitoring for Signal Temporal Logic Tasks" can be found in .
 We provide two case studies to demonstrate the efficiency of our proposed algorithm: Drone altitude control and Spacecraft Rendezvous
 All simulations were performed on a computer with an Intel Core i9-13900H CPU and 32 GB of RAM
 
+## case1
 ### offline computation results
 We first use the model information to pre-compute all possible I-remaining feasible sets that may incur for each time instant. The detailed computation method can be found in [link](https://github.com/Xinyi-Yu/MPM4STL). 
 
 ### real-time monitoring
-You can generate your own trace by selecting different inputs in ```parameter.jl```. Then feed the trace to our self-triggered monitor in ```st_monitor.jl``` then you will get an observation history. You can check ```case1/drone_altitude_control.png``` to see our demonstration.
+You can generate your own trace by selecting different inputs in ```parameter.jl```. Then feed the trace to our self-triggered monitor in ```main.jl``` then you will get an observation history. You can check ```2trace.png``` to see our demonstration.
 
 ### Dependencies
 In this project, we use the following package
