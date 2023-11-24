@@ -6,7 +6,6 @@ using LaTeXStrings
 using JLD, HDF5
 include("parameter.jl")
 include("forward.jl")
-include("draw.jl")
 include("offline_set.jl")
 include("recomp.jl")
 
