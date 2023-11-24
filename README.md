@@ -7,7 +7,7 @@ All simulations were performed on a computer with an Intel Core i9-13900H CPU an
 
 ## case1
 ### offline computation results
-We first use the model information to pre-compute all possible I-remaining feasible sets that may incur for each time instant. The detailed computation method can be found in [link](https://github.com/Xinyi-Yu/MPM4STL). 
+We first use the model information to pre-compute all possible I-remaining feasible sets that may incur for each time instant. The detailed computation method can be found in [link](https://github.com/Xinyi-Yu/MPM4STL). The backward feasible set results are contained in ```offline_set.jl```.
 
 ### real-time monitoring
 You can generate your own trace by selecting different inputs in ```parameter.jl```. Then feed the trace to our self-triggered monitor in ```main.jl``` then you will get an observation history. You can check ```2trace.png``` to see our demonstration.
