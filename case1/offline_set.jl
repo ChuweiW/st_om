@@ -1,5 +1,5 @@
 include("parameter.jl")
-include("comp.jl")
+include("forward.jl")
 function onestepset1(X, U, X_next)
     temp=[];
     X_next_tmp = X_next
@@ -28,7 +28,7 @@ function onestepset(X, U, X_next)
     return results
 end
 
-#40-50
+#40-50 X^I_t 
 x = [];
 tempset = [];
 push!(x,UnionSetArray([convert(HPolytope,goal[4])]))
@@ -70,7 +70,7 @@ for i in 1:20
     pushfirst!(x2,tempset2)
 end
 
-
+# return backward feasible sets at time t of I-remaining formula 
 function feasible_set(t,i1,i2,i3)
     # t = 1~51
     X_fs = convert(HPolytope,X)
