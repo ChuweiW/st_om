@@ -18,6 +18,7 @@ endt = [21,21,51];
 # generate the trace by changing the inputs
 z =[];push!(z,40.0);
 vz =[];push!(vz,0.0);
+# adjust the inputs and original states and with get_states() to get new traces
 u = [-1.2,-2.0,-2.2,-2.4,-1.2,-2.1,-2.3,-1.4,-1.2,0.2,3.0,2.0,0.3,0.1,0.0,0.1,1.2,1.0,1.2,1.0,-1.2,2.2,1.1,0.2,1.6,-1.2,-1.0,1.1,1.0,-1.6,-1.5,-1.0,-0.6,-2.1,1.2,1.2,0.1,1.2,0.1,2.1,1.4,2.1,0.3,0.1,1.2,2.2,-1.0,-2.2,1.0,0.0]
 function get_states()
     for i in 1:50
