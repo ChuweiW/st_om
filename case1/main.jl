@@ -4,10 +4,11 @@ using Plots
 using Polyhedra, CDDLib
 using LaTeXStrings
 using JLD, HDF5
-include("parameter.jl")
 include("forward.jl")
 include("offline_set.jl")
 include("recomp.jl")
+include("parameter.jl")
+# switch the parameters in parameter.jl to generate new observation history
 
 I1 = 1;
 I2 = 1;
