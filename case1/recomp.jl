@@ -1,5 +1,5 @@
 include("parameter.jl")
-include("comp.jl")
+include("forward.jl")
 
 # predicted belief state
 function Fhat(as::augmented_state,t::Int)
